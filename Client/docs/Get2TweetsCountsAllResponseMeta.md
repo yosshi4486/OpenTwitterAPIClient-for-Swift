@@ -1,0 +1,13 @@
+# Get2TweetsCountsAllResponseMeta
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**newestId** | **String** | The newest id in this response. | [optional] 
+**nextToken** | **String** | The next token. | [optional] 
+**oldestId** | **String** | The oldest id in this response. | [optional] 
+**totalTweetCount** | **Int** | The sum of results returned in this response. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
