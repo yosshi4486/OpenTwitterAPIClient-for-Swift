@@ -15,7 +15,7 @@ OpenAPIClientAPI.customHeaders["Authorization"] = "Bearer \(bearerToken)"
 
 Task {
     do {
-        let userIDs = try await UsersAPI.usersIdFollowing(id: useID)
+        let userIDs = try await UsersAPI.usersIdFollowing(id: userID)
         print(userIDs)
     } catch {
         print("An error occur: \(error)")
