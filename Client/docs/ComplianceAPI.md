@@ -21,7 +21,7 @@ Creates a compliance for the given job type
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let createComplianceJobRequest = CreateComplianceJobRequest(name: "name_example", resumable: false, type: "type_example") // CreateComplianceJobRequest | 
 
@@ -71,7 +71,7 @@ Returns a single Compliance Job by ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Compliance Job to retrieve.
 let complianceJobFields = ["complianceJobFields_example"] // Set<String> | A comma separated list of ComplianceJob fields to display. (optional)
@@ -123,7 +123,7 @@ Returns recent Compliance Jobs for a given job type and optional job status
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let type = "type_example" // String | Type of Compliance Job to list.
 let status = "status_example" // String | Status of Compliance Job to list. (optional)

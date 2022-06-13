@@ -21,7 +21,7 @@ Returns Tweet objects that have been bookmarked by the requesting User
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to return results.
 let maxResults = 987 // Int | The maximum number of results. (optional)
@@ -87,7 +87,7 @@ Adds a Tweet (ID in the body) to the requesting User's (in the path) bookmarks
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to add bookmarks.
 let bookmarkAddRequest = BookmarkAddRequest(tweetId: "tweetId_example") // BookmarkAddRequest | 
@@ -139,7 +139,7 @@ Removes a Tweet from the requesting User's bookmarked Tweets.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User whose bookmark is to be removed.
 let tweetId = "tweetId_example" // String | The ID of the Tweet that the source User is removing from bookmarks.
