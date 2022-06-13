@@ -7,7 +7,7 @@ The purpose of this repository is to enable developers to set up Twitter API's c
 ## Usege
 
 ```swift
-import OpenTwitterAPI
+import OpenTwitterAPIClient
 
 let bearerToken = "xxx"
 let userID = "xxxx"
@@ -24,11 +24,17 @@ Task {
 
 ```
 
-Please check out `Client/docs` for more details.
+Please check out `GeneratedSources/docs` for more details.
 
 ## Installation
 
-CocoaPods and Carthage has not supported yet, so please use SwiftPackage for installing.
+### Recommended
+
+Swift Package
+
+### Others
+
+CocoaPods, Carthage
 
 ## Regenerate codes
 
