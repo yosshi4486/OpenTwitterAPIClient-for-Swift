@@ -37,7 +37,7 @@ This endpoint returns information about the requesting User.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let userFields = ["userFields_example"] // Set<String> | A comma separated list of User fields to display. (optional)
 let expansions = ["expansions_example"] // Set<String> | A comma separated list of fields to expand. (optional)
@@ -91,7 +91,7 @@ This endpoint returns information about a User. Specify User by ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let userFields = ["userFields_example"] // Set<String> | A comma separated list of User fields to display. (optional)
@@ -147,7 +147,7 @@ This endpoint returns information about a User. Specify User by username.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let username = "username_example" // String | A username.
 let userFields = ["userFields_example"] // Set<String> | A comma separated list of User fields to display. (optional)
@@ -203,7 +203,7 @@ This endpoint returns information about Users. Specify Users by their ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let ids = ["inner_example"] // [String] | A list of User IDs, comma-separated. You can specify up to 100 IDs.
 let userFields = ["userFields_example"] // Set<String> | A comma separated list of User fields to display. (optional)
@@ -259,7 +259,7 @@ This endpoint returns information about Users. Specify Users by their username.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let usernames = ["inner_example"] // [String] | A list of usernames, comma-separated.
 let userFields = ["userFields_example"] // Set<String> | A comma separated list of User fields to display. (optional)
@@ -315,7 +315,7 @@ Returns a list of Users that follow a List by the provided List ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -375,7 +375,7 @@ Returns a list of Users that are members of a List by the provided List ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -435,7 +435,7 @@ Returns a list of Users that have liked the provided Tweet ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | A single Tweet ID.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -495,7 +495,7 @@ Returns a list of Users that have retweeted the provided Tweet ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | A single Tweet ID.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -555,7 +555,7 @@ Causes the User (in the path) to block the target User. The User (in the path) m
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to block the target User.
 let blockUserRequest = BlockUserRequest(targetUserId: "targetUserId_example") // BlockUserRequest | 
@@ -607,7 +607,7 @@ Returns a list of Users that are blocked by the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to return results.
 let maxResults = 987 // Int | The maximum number of results. (optional)
@@ -667,7 +667,7 @@ Causes the User(in the path) to follow, or “request to follow” for protected
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to follow the target User.
 let usersFollowingCreateRequest = UsersFollowingCreateRequest(targetUserId: "targetUserId_example") // UsersFollowingCreateRequest |  (optional)
@@ -719,7 +719,7 @@ Returns a list of Users that follow the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional)
@@ -779,7 +779,7 @@ Returns a list of Users that are being followed by the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional)
@@ -839,7 +839,7 @@ Causes the User (in the path) to mute the target User. The User (in the path) mu
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to mute the target User.
 let muteUserRequest = MuteUserRequest(targetUserId: "targetUserId_example") // MuteUserRequest |  (optional)
@@ -891,7 +891,7 @@ Returns a list of Users that are muted by the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to return results.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -951,7 +951,7 @@ Causes the source User to unblock the target User. The source User must match th
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let sourceUserId = "sourceUserId_example" // String | The ID of the authenticated source User that is requesting to unblock the target User.
 let targetUserId = "targetUserId_example" // String | The ID of the User that the source User is requesting to unblock.
@@ -1003,7 +1003,7 @@ Causes the source User to unfollow the target User. The source User must match t
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let sourceUserId = "sourceUserId_example" // String | The ID of the authenticated source User that is requesting to unfollow the target User.
 let targetUserId = "targetUserId_example" // String | The ID of the User that the source User is requesting to unfollow.
@@ -1055,7 +1055,7 @@ Causes the source User to unmute the target User. The source User must match the
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let sourceUserId = "sourceUserId_example" // String | The ID of the authenticated source User that is requesting to unmute the target User.
 let targetUserId = "targetUserId_example" // String | The ID of the User that the source User is requesting to unmute.

@@ -1,10 +1,10 @@
-name: OpenAPIClient
+name: OpenTwitterAPI
 targets:
-  OpenAPIClient:
+  OpenTwitterAPI:
     type: framework
     platform: iOS
     deploymentTarget: "9.0"
-    sources: [OpenAPIClient]
+    sources: [OpenTwitterAPI]
     info:
       path: ./Info.plist
       version: 2.45

@@ -32,7 +32,7 @@ Get a User's List Memberships.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -92,7 +92,7 @@ Causes a User to become a member of a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List for which to add a member.
 let listAddUserRequest = ListAddUserRequest(userId: "userId_example") // ListAddUserRequest |  (optional)
@@ -144,7 +144,7 @@ Creates a new List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let listCreateRequest = ListCreateRequest(description: "description_example", name: "name_example", _private: false) // ListCreateRequest |  (optional)
 
@@ -194,7 +194,7 @@ Delete a List that you own.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List to delete.
 
@@ -244,7 +244,7 @@ Returns a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List.
 let listFields = ["listFields_example"] // Set<String> | A comma separated list of List fields to display. (optional)
@@ -300,7 +300,7 @@ Update a List that you own.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List to modify.
 let listUpdateRequest = ListUpdateRequest(description: "description_example", name: "name_example", _private: false) // ListUpdateRequest |  (optional)
@@ -352,7 +352,7 @@ Causes a User to be removed from the members of a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List to remove a member.
 let userId = "userId_example" // String | The ID of User that will be removed from the List.
@@ -404,7 +404,7 @@ Causes a User to follow a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that will follow the List.
 let listFollowedRequest = ListFollowedRequest(listId: "listId_example") // ListFollowedRequest |  (optional)
@@ -456,7 +456,7 @@ Get a User's Owned Lists.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -516,7 +516,7 @@ Causes a User to pin a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that will pin the List.
 let listPinnedRequest = ListPinnedRequest(listId: "listId_example") // ListPinnedRequest | 
@@ -568,7 +568,7 @@ Get a User's Pinned Lists.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to return results.
 let listFields = ["listFields_example"] // Set<String> | A comma separated list of List fields to display. (optional)
@@ -624,7 +624,7 @@ Causes a User to unfollow a List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that will unfollow the List.
 let listId = "listId_example" // String | The ID of the List to unfollow.
@@ -676,7 +676,7 @@ Causes a User to remove a pinned List.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User for whom to return results.
 let listId = "listId_example" // String | The ID of the List to unpin.
@@ -728,7 +728,7 @@ Returns a User's followed Lists.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)

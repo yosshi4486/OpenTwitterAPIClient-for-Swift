@@ -24,7 +24,7 @@ Returns a variety of information about the Space specified by the requested ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Space to be retrieved.
 let spaceFields = ["spaceFields_example"] // Set<String> | A comma separated list of Space fields to display. (optional)
@@ -82,7 +82,7 @@ Returns a variety of information about the Spaces created by the provided User I
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let userIds = ["inner_example"] // [String] | The IDs of Users to search through.
 let spaceFields = ["spaceFields_example"] // Set<String> | A comma separated list of Space fields to display. (optional)
@@ -140,7 +140,7 @@ Returns a variety of information about the Spaces specified by the requested IDs
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let ids = ["inner_example"] // [String] | The list of Space IDs to return.
 let spaceFields = ["spaceFields_example"] // Set<String> | A comma separated list of Space fields to display. (optional)
@@ -198,7 +198,7 @@ Returns Spaces that match the provided query.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let query = "query_example" // String | The search query.
 let state = "state_example" // String | The state of Spaces to search for. (optional) (default to .all)
@@ -260,7 +260,7 @@ Retrieves the list of Users who purchased a ticket to the given space
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Space to be retrieved.
 let paginationToken = "paginationToken_example" // String | This parameter is used to get a specified 'page' of results. (optional)
@@ -320,7 +320,7 @@ Retrieves Tweets shared in the specified Space.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Space to be retrieved.
 let maxResults = 987 // Int | The number of Tweets to fetch from the provided space. If not provided, the value will default to the maximum of 100. (optional) (default to 100)

@@ -43,7 +43,7 @@ Add or delete rules from a User's active rule set. Users can provide unique, opt
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let addOrDeleteRulesRequest = AddOrDeleteRulesRequest(add: [RuleNoId(tag: "tag_example", value: "value_example")], delete: DeleteRulesRequest_delete(ids: ["ids_example"], values: ["values_example"])) // AddOrDeleteRulesRequest | 
 let dryRun = true // Bool | Dry Run can be used with both the add and delete action, with the expected result given, but without actually taking any action in the system (meaning the end state will always be as it was when the request was submitted). This is particularly useful to validate rule changes. (optional)
@@ -95,7 +95,7 @@ Causes the User to create a Tweet under the authorized account.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let tweetCreateRequest = TweetCreateRequest(directMessageDeepLink: "directMessageDeepLink_example", forSuperFollowersOnly: false, geo: TweetCreateRequest_geo(placeId: "placeId_example"), media: TweetCreateRequest_media(mediaIds: ["mediaIds_example"], taggedUserIds: ["taggedUserIds_example"]), poll: TweetCreateRequest_poll(durationMinutes: 123, options: ["options_example"], replySettings: "replySettings_example"), quoteTweetId: "quoteTweetId_example", reply: TweetCreateRequest_reply(excludeReplyUserIds: ["excludeReplyUserIds_example"], inReplyToTweetId: "inReplyToTweetId_example"), replySettings: "replySettings_example", text: "text_example") // TweetCreateRequest | 
 
@@ -145,7 +145,7 @@ Delete specified Tweet (in the path) by ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Tweet to be deleted.
 
@@ -195,7 +195,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | A single Tweet ID.
 let tweetFields = ["tweetFields_example"] // Set<String> | A comma separated list of Tweet fields to display. (optional)
@@ -257,7 +257,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let ids = ["inner_example"] // [String] | A comma separated list of Tweet IDs. Up to 100 are allowed in a single request.
 let tweetFields = ["tweetFields_example"] // Set<String> | A comma separated list of Tweet fields to display. (optional)
@@ -319,7 +319,7 @@ Returns a variety of information about each Tweet that quotes the Tweet specifie
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | A single Tweet ID.
 let maxResults = 987 // Int | The maximum number of results to be returned. (optional) (default to 10)
@@ -387,7 +387,7 @@ Returns rules from a User's active rule set. Users can fetch all of their rules 
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let ids = ["inner_example"] // [String] | A comma-separated list of Rule IDs. (optional)
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 1000)
@@ -441,7 +441,7 @@ Hides or unhides a reply to an owned conversation.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let tweetId = "tweetId_example" // String | The ID of the reply that you want to hide or unhide.
 let tweetHideRequest = TweetHideRequest(hidden: false) // TweetHideRequest |  (optional)
@@ -493,7 +493,7 @@ Returns a list of Tweets associated with the provided List ID.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the List.
 let maxResults = 987 // Int | The maximum number of results. (optional) (default to 100)
@@ -559,7 +559,7 @@ Streams a deterministic 1% of public Tweets.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let backfillMinutes = 987 // Int | The number of minutes of backfill requested. (optional)
 let tweetFields = ["tweetFields_example"] // Set<String> | A comma separated list of Tweet fields to display. (optional)
@@ -621,7 +621,7 @@ Streams Tweets matching the stream's active rule set.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let backfillMinutes = 987 // Int | The number of minutes of backfill requested. (optional)
 let tweetFields = ["tweetFields_example"] // Set<String> | A comma separated list of Tweet fields to display. (optional)
@@ -683,7 +683,7 @@ Retrieves the list of Users who purchased a ticket to the given space
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Space to be retrieved.
 let paginationToken = "paginationToken_example" // String | This parameter is used to get a specified 'page' of results. (optional)
@@ -743,7 +743,7 @@ Retrieves Tweets shared in the specified Space.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the Space to be retrieved.
 let maxResults = 987 // Int | The number of Tweets to fetch from the provided space. If not provided, the value will default to the maximum of 100. (optional) (default to 100)
@@ -807,7 +807,7 @@ Returns Tweet Counts that match a search query.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let query = "query_example" // String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length.
 let startTime = Date() // Date | YYYY-MM-DDTHH:mm:ssZ. The oldest UTC timestamp (from most recent 7 days) from which the Tweets will be provided. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). (optional)
@@ -873,7 +873,7 @@ Returns Tweet Counts from the last 7 days that match a search query.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let query = "query_example" // String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length.
 let startTime = Date() // Date | YYYY-MM-DDTHH:mm:ssZ. The oldest UTC timestamp (from most recent 7 days) from which the Tweets will be provided. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). (optional)
@@ -939,7 +939,7 @@ Returns Tweets that match a search query.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let query = "query_example" // String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length.
 let startTime = Date() // Date | YYYY-MM-DDTHH:mm:ssZ. The oldest UTC timestamp from which the Tweets will be provided. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). (optional)
@@ -1017,7 +1017,7 @@ Returns Tweets from the last 7 days that match a search query.
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let query = "query_example" // String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length.
 let startTime = Date() // Date | YYYY-MM-DDTHH:mm:ssZ. The oldest UTC timestamp from which the Tweets will be provided. Timestamp is in second granularity and is inclusive (i.e. 12:00:01 includes the first second of the minute). (optional)
@@ -1095,7 +1095,7 @@ Causes the User (in the path) to like the specified Tweet. The User in the path 
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to like the Tweet.
 let usersLikesCreateRequest = UsersLikesCreateRequest(tweetId: "tweetId_example") // UsersLikesCreateRequest |  (optional)
@@ -1147,7 +1147,7 @@ Returns a list of Tweets liked by the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let maxResults = 987 // Int | The maximum number of results. (optional)
@@ -1213,7 +1213,7 @@ Returns Tweet objects that mention username associated to the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let sinceId = "sinceId_example" // String | The minimum Tweet ID to be included in the result set. This parameter takes precedence over start_time if both are specified. (optional)
@@ -1287,7 +1287,7 @@ Causes the User (in the path) to retweet the specified Tweet. The User in the pa
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to retweet the Tweet.
 let usersRetweetsCreateRequest = UsersRetweetsCreateRequest(tweetId: "tweetId_example") // UsersRetweetsCreateRequest |  (optional)
@@ -1339,7 +1339,7 @@ Returns Tweet objects that appears in the provided User ID's home timeline
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User to list Reverse Chronological Timeline Tweets of.
 let sinceId = "sinceId_example" // String | The minimum Tweet ID to be included in the result set. This parameter takes precedence over start_time if both are specified. (optional)
@@ -1415,7 +1415,7 @@ Returns a list of Tweets authored by the provided User ID
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the User to lookup.
 let sinceId = "sinceId_example" // String | The minimum Tweet ID to be included in the result set. This parameter takes precedence over start_time if both are specified. (optional)
@@ -1491,7 +1491,7 @@ Causes the User (in the path) to unlike the specified Tweet. The User must match
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to unlike the Tweet.
 let tweetId = "tweetId_example" // String | The ID of the Tweet that the User is requesting to unlike.
@@ -1543,7 +1543,7 @@ Causes the User (in the path) to unretweet the specified Tweet. The User must ma
 ### Example
 ```swift
 // The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
-import OpenAPIClient
+import OpenTwitterAPI
 
 let id = "id_example" // String | The ID of the authenticated source User that is requesting to retweet the Tweet.
 let sourceTweetId = "sourceTweetId_example" // String | The ID of the Tweet that the User is requesting to unretweet.
