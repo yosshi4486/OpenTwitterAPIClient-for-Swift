@@ -1,15 +1,15 @@
 version: '3.7'
 
-# I use docker as a package manager and script executor rather than using homebrew or bundler.
+# In this repository, we use docker as a package manager and script executor rather than using homebrew or bundler.
 services:
-  open-twitter-api-gen:
+  open-twitter-api-client-gen:
     image: openapitools/openapi-generator-cli:v6.0.0
-    working_dir: /open-twitter-api-gen
+    working_dir: /open-twitter-api-client-gen
     volumes:
-      - ./:/open-twitter-api-gen
+      - ./:/open-twitter-api-client-gen
     command: > # In docker-compose.yml, a multiline command should start with >.
       generate
       -i https://api.twitter.com/2/openapi.json
       -g swift5 
-      -o /open-twitter-api-gen/Client
-      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPI,swiftPackagePath=Client/OpenTwitterAPI/Classes,podAuthors=yosshi4486,podSource=Client/OpenTwitterAPI/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPI-for-Swift,podVersion=1.0.0
+      -o /open-twitter-api-client-gen/GeneratedSources
+      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPIClient,podAuthors=yosshi4486,podSource=GeneratedSources/OpenTwitterAPIClient/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPIClient-for-Swift,podVersion=1.0.0
