@@ -39,3 +39,5 @@ Please setup Docker environment, and execute:
 ```
 sh update.sh
 ```
+## License
+This repository basically follows [an OpenAPITools/openapi-genarator's license definition](https://github.com/OpenAPITools/openapi-generator#table-of-contents), but if there are any problems, please let us know as issues.
