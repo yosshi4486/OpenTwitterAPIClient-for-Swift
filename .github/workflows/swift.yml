@@ -11,9 +11,8 @@ jobs:
 
     runs-on: macos-latest
 
+# OpenTwitterAPI doesn't have a test target, we only check for building the source.
     steps:
     - uses: actions/checkout@v3
     - name: Build
       run: swift build -v
-    - name: Run tests
-      run: swift test -v
