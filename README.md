@@ -37,5 +37,5 @@ I will use GitHub Action for automated re-generation of the client, but I kick i
 Please setup Docker environment, and execute:
 
 ```
-docker compose up
+sh update.sh
 ```
