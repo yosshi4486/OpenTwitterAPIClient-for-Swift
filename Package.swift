@@ -27,7 +27,7 @@ let package = Package(
         .target(
             name: "OpenTwitterAPI",
             dependencies: ["AnyCodable", ],
-            path: "Client/OpenAPIClient/Classes"
+            path: "Client/OpenTwitterAPI/Classes"
         ),
     ]
 )
