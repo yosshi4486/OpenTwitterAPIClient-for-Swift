@@ -1,5 +1,6 @@
 version: '3.7'
 
+# I use docker as a package manager and script executor rather than using homebrew or bundler.
 services:
   open-twitter-api-gen:
     image: openapitools/openapi-generator-cli:v6.0.0
@@ -11,4 +12,4 @@ services:
       -i https://api.twitter.com/2/openapi.json
       -g swift5 
       -o /open-twitter-api-gen/Client
-      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPI
+      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPI,swiftPackagePath=Client/OpenTwitterAPI/Classes,podAuthors=yosshi4486,podSource=Client/OpenTwitterAPI/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPI-for-Swift,podVersion=1.0.0
