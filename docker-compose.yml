@@ -12,4 +12,4 @@ services:
       -i https://api.twitter.com/2/openapi.json
       -g swift5 
       -o /open-twitter-api-client-gen/Client
-      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPIClient,swiftPackagePath=Client/OpenTwitterAPIClient/Classes,podAuthors=yosshi4486,podSource=Client/OpenTwitterAPIClient/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPIClient-for-Swift,podVersion=1.0.0
+      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPIClient,podAuthors=yosshi4486,podSource=Client/OpenTwitterAPIClient/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPIClient-for-Swift,podVersion=1.0.0
