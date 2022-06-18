@@ -22,7 +22,12 @@ final class UtilTests: XCTestCase {
         let token = "abcdefg123456"
         OpenTwitterAPIClientAPI.setToken(token)
 
-        XCTAssertEqual(OpenTwitterAPIClientAPI.customHeaders, ["Authorization": "Bearer abcdefg123456"])
+        let expectedHeader = ["Authorization": "Bearer abcdefg123456"]
+
+        XCTAssertEqual(OpenTwitterAPIClientAPI.customHeaders, expectedHeader)
+
+        // Check the effect.
+        XCTAssertEqual(TweetsAPI.findTweetByIdWithRequestBuilder(id: "my_id").headers, expectedHeader)
     }
 
 }
