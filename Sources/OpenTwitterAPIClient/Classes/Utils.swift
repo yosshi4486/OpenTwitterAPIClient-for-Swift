@@ -11,7 +11,7 @@ extension OpenTwitterAPIClientAPI {
 
     /// Sets the given token to Bearer Authorization header. You can use this method regardless app level auth or user level auth.
     ///
-    /// This method replaces an "Authorization" key of "customHeaders".
+    /// This method replaces an "Authorization" field of "customHeaders".
     ///
     /// - Parameters:
     ///   - token: The token for accessing twitter api.
