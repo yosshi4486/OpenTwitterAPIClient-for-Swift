@@ -11,5 +11,5 @@ services:
       generate
       -i https://api.twitter.com/2/openapi.json
       -g swift5 
-      -o /open-twitter-api-client-gen/GeneratedSources
-      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPIClient,podAuthors=yosshi4486,podSource=GeneratedSources/OpenTwitterAPIClient/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPIClient-for-Swift,podVersion=1.0.0
+      -o /open-twitter-api-client-gen/Sources
+      --additional-properties=responseAs=AsyncAwait,projectName=OpenTwitterAPIClient,podAuthors=yosshi4486,podSource=Sources/OpenTwitterAPIClient/Classes,podLicense=MIT,podHomepage=https://github.com/yosshi4486/OpenTwitterAPIClient-for-Swift,podVersion=1.0.0
