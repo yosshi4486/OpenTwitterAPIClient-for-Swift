@@ -29,5 +29,9 @@ let package = Package(
             dependencies: ["AnyCodable", ],
             path: "Sources/OpenTwitterAPIClient/Classes"
         ),
+        .testTarget(
+            name: "OpenTwitterAPIClientTests",
+            dependencies: ["OpenTwitterAPIClient"]
+        ),
     ]
 )
